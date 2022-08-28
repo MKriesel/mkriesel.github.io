@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Riot API</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			body {
+			background-image: url("images/hbpier.jpg");
+			background-repeat:no-repeat;
+   			background-size:cover;
+			box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.6);
+			}
+			</style>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		
+			<div id="wrapper">
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/oghenrynoback.png" alt="" /><span class="title"> </span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="sort.html">Picture Sort</a></li>
+							<li><a href="riot.html">Riot API</a></li>
+							<li><a href="frc.html">FRC</a></li>
+							<li><a href="keybox.html">KeyBox</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Riot API</h1>
+							<span class="image main"><img src="images/api.png" alt="" /></span>
+							<p>Riot provides easy access to their API for developers to collect data based on their games. As a way to learn Javascript and databases (nedb) I created this to gather data about TFT to find out more specific data about the game.</p>
+							<p>TFT, Team Fight Tactics, is an auto battle which players buy units and have them fight and each player controls a little legend. In decided to gather data on which little legend tends to win the most game. I used node with node-fetch in order to fetch the data from the api with a interval set to not go over my 20 calls per 2 minutes Riot allows. I stored the data in nedb, a light weight local mongodb varient, and then processes the data and turns it into xlsx to turn into graphs and more readable charts.</p>	
+						</div>
+					</div>			
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
